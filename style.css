@@ -1,0 +1,186 @@
+body {
+  color: white;
+  background-color: #4d4d4d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 1rem 1rem;
+  /*display: flex;
+  align-items: center;*/
+  /*justify-content: space-between;*/
+  background: #fff;
+  margin: 0;
+  text-align: center;
+  }
+  
+  /*#header img {
+    width: 80px;
+    height: 80px;
+  }*/
+
+main {
+  color: #333;
+  background-color: white;
+  padding: 30px 10px 30px 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #008b73;
+}
+
+h2 {
+  color: #008b73;
+}
+
+.donate button {
+  color: white;
+  background-color: #008b73;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  
+}
+
+.donate button a {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.donate button:hover {
+  background-color: orange;
+}
+
+.donate .button a:hover {
+  color: white;
+}
+
+footer img {
+  align-items: right;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #4d4d4d;
+}
+
+/*footer a {
+  margin: 20px;
+  text-align: center;
+}*/
+
+footer p {
+  margin-top: 2px;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+body,
+ul {
+margin: 0px;
+padding: 0px;
+align-items: center;
+}
+
+a {
+color: #008b73;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 14px;
+font-weight: bold;  
+}
+
+a:hover {
+background: rgba(0, 0, 0, 0.05);
+color: red;
+}
+
+#logo {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.menutop {
+  background-color: #e7e7e7;
+  display: block;
+  text-align: center;
+}
+
+#menu {
+display: inline-flex;
+list-style: none;
+}
+
+#menu a {
+display: block;
+padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+#menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  right: 0px;
+  background: #e7e7e7;
+  transition: 0.6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+#nav.active #menu {
+  height: calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+#menu a {
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+#btn-mobile {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+#hamburger {
+  border-top: 2px solid;
+  width: 20px;
+}
+#hamburger::after,
+#hamburger::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+#nav.active #hamburger {
+  border-top-color: transparent;
+}
+#nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+#nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
